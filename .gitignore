@@ -12,3 +12,6 @@ composer.lock
 vagrant_ansible_inventory_default
 Vagrantfile
 .DS_Store
+build/
+phpstan-baseline.neon
+.php-cs-fixer.cache
