@@ -1,0 +1,11 @@
+parameters:
+    level: 5
+    paths:
+        - src
+    tmpDir: build/phpstan
+    checkMissingIterableValueType: true
+    reportUnmatchedIgnoredErrors: true
+    treatPhpDocTypesAsCertain: false
+    editorUrl: 'phpstorm://open?file=%%file%%&line=%%line%%'
+    editorUrlTitle: '%%relFile%%:%%line%%'
+

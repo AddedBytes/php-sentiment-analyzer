@@ -1,20 +1,21 @@
-# PHP Sentiment Analyzer
+### PHP Sentiment Analyzer 
+#### Added Bytes fork
 
 PHP Sentiment Analyzer is a lexicon and rule-based sentiment analysis tool that is used to understand sentiments in a sentence using VADER \(Valence Aware Dictionary and sentiment Reasoner\).
 
 [![GitHub license](https://img.shields.io/github/license/davmixcool/php-sentiment-analyzer.svg)](https://github.com/davmixcool/php-sentiment-analyzer/blob/master/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/davmixcool/php-sentiment-analyzer.svg)](https://github.com/davmixcool/php-sentiment-analyzer/issues) [![Stable](https://poser.pugx.org/davmixcool/php-sentiment-analyzer/v/stable.svg)](https://poser.pugx.org/davmixcool/php-sentiment-analyzer/v/stable.svg) [![Download](https://poser.pugx.org/davmixcool/php-sentiment-analyzer/d/total.svg)](https://poser.pugx.org/davmixcool/php-sentiment-analyzer/d/total.svg) [![Twitter](https://img.shields.io/twitter/url/https/github.com/davmixcool/php-sentiment-analyzer.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fdavmixcool%2Fphp-sentiment-analyzer)
 
-## Features
+### Features
 
 * Text
 * Emoticon
 * Emoji
 
-## Requirements
+### Requirements
 
 * PHP 5.5 and above
 
-## Steps:
+### Steps:
 
 * [Install](./#install)
 * [Usage](./#usage)
@@ -23,17 +24,17 @@ PHP Sentiment Analyzer is a lexicon and rule-based sentiment analysis tool that 
 * [License](./#license)
 * [Reference](./#reference)
 
-### Install
+#### Install
 
 **Composer**
 
 Run the following to include this via Composer
 
 ```text
-composer require davmixcool/php-sentiment-analyzer
+composer require addedbytes/php-sentiment-analyzer
 ```
 
-### Simple Usage
+#### Simple Usage
 
 ```php
 Use Sentiment\Analyzer;
@@ -50,7 +51,7 @@ print_r($output_emoji);
 print_r($output_text_with_emoji);
 ```
 
-### Simple Outputs
+#### Simple Outputs
 
 ```text
 David is smart, handsome, and funny. ---------------- ['neg'=> 0.0, 'neu'=> 0.337, 'pos'=> 0.663, 'compound'=> 0.7096]
@@ -60,7 +61,7 @@ David is smart, handsome, and funny. ---------------- ['neg'=> 0.0, 'neu'=> 0.33
 Aproko doctor made me 🤣 ------------- ['neg' => 0, 'neu' => 0.714, 'pos' =>  0.286, 'compound' => 0.4939]
 ```
 
-### Advanced Usage
+#### Advanced Usage
 
 You can now dynamically update the VADER \(Valence\) lexicon on the fly for words that are not in the dictionary. See the Example below:
 
@@ -100,7 +101,7 @@ foreach ($strings as $string) {
 }
 ```
 
-### Advanced Outputs
+#### Advanced Outputs
 
 ```text
 Weather today is rubbish  ------------- {"neg":0.455,"neu":0.545,"pos":0,"compound":-0.3612} 
@@ -118,19 +119,19 @@ Marie was enthusiastic about the upcoming trip. Her brother was also passionate 
 String: To be or not to be?  ------------- {"neg":0,"neu":1,"pos":0,"compound":0}
 ```
 
-### Stargazers
+#### Stargazers
 
 [![Stargazers repo roster for @davmixcool/php-sentiment-analyzer](https://reporoster.com/stars/davmixcool/php-sentiment-analyzer)](https://github.com/davmixcool/php-sentiment-analyzer/stargazers)
 
-### Forkers
+#### Forkers
 
 [![Forkers repo roster for @davmixcool/php-sentiment-analyzer](https://reporoster.com/forks/davmixcool/php-sentiment-analyzer)](https://github.com/davmixcool/php-sentiment-analyzer/network/members)
 
-### License
+#### License
 
 This package is licensed under the [MIT license](https://github.com/davmixcool/php-sentiment-analyzer/blob/master/LICENSE).
 
-### Reference
+#### Reference
 
 Hutto, C.J. & Gilbert, E.E. \(2014\). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media \(ICWSM-14\). Ann Arbor, MI, June 2014.
 
